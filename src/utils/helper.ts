@@ -15,4 +15,4 @@ export const onChangeHandleErrors = (setValues: Function, setErrors: Function, e
 
 export const isAuthenticaded = () => {
 	return localStorage.getItem('token') !== null;
-}
+};

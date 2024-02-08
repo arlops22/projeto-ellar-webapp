@@ -6,9 +6,7 @@
   "extends": [
    "eslint:recommended",
    "plugin:@typescript-eslint/recommended",
-   "plugin:react/recommended",
-   "plugin:storybook/recommended",
-   "plugin:cypress/recommended"
+   "plugin:react/recommended"
   ],
   "overrides": [
    {
@@ -32,32 +30,9 @@
    "@stylistic/js",
    "@stylistic/ts",
    "@typescript-eslint",
-   "react",
-   "import-helpers"
+   "react"
   ],
-  "ignorePatterns": ["build/", "dist/", "node_modules/"],
   "rules": {
-   "import-helpers/order-imports": [
-     "error",
-     {
-       "newlinesBetween": "always",
-       "groups": [
-           "/^react/",
-           "module",
-           "/@material-tailwind/",
-           "/assets/",
-           "/router/",
-           "/hooks/",
-           "/util/",
-           "/services/",
-           "/context/",
-           "/types/",
-           "/{components, atoms, organisms, molecules, template}/",
-           ["parent", "sibling", "index"]
-       ],
-       "alphabetize": { "order": "asc", "ignoreCase": true }
-     }
-   ] ,
    "@stylistic/ts/indent": [
     "error",
     "tab"
@@ -142,10 +117,7 @@
    "@typescript-eslint/no-empty-function": "off",
    "@typescript-eslint/no-inferrable-types": "off",
    "@typescript-eslint/explicit-module-boundary-types": "off",
-   "@typescript-eslint/no-unnecessary-type-constraint": "off",
-   "cypress/unsafe-to-chain-commands": "off",
-   "cypress/unsafe-to-chain-command": "off",
-   "@typescript-eslint/no-namespace": "off"
+   "@typescript-eslint/no-unnecessary-type-constraint": "off"
   }
  }
  
