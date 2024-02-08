@@ -1,0 +1,10 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import './fonts.css';
+
+@layer utilities {
+  .scroll-container {
+    @apply overflow-auto scrollbar scrollbar-w-[5px] scrollbar-thumb-rounded-full scrollbar-thumb-gray-400 scrollbar-track-gray-200
+  }
+}
