@@ -1,15 +1,10 @@
 import tailwindScrollbar from 'tailwind-scrollbar';
 
-import withMT from '@material-tailwind/react/utils/withMT';
-
-import { Tokens } from './src/util';
-
-import { Config } from 'tailwindcss/types/config';
-
+import * as Tokens from './src/utils/tokens';
 
 /** @type {import('tailwindcss').Config} */
 
-const tailwindConfig: Config = {
+const tailwindConfig = {
 	content: [
 		'./index.html',
 		'./src/**/*.{js,ts,jsx,tsx}',
@@ -18,7 +13,7 @@ const tailwindConfig: Config = {
 		colors: Tokens.colors,
 		fontSize: Tokens.fontSize,
 		fontFamily: {
-			sans: [ 'Noto Sans', 'sans-serif' ]
+			sans: [ 'Inter', 'sans-serif' ]
 		},
 		extend: {
 			keyframes: {
@@ -29,11 +24,11 @@ const tailwindConfig: Config = {
 				rotateOpacity: {
 					'0%': {
 						transform: 'rotate(0deg)',
-						opacity: '0.1',
+						opacity: 0.1,
 					},
 					'100%': {
 						transform: 'rotate(1turn)',
-						opacity: '1',
+						opacity: 1,
 					},
 				}
 			},
@@ -54,4 +49,4 @@ const tailwindConfig: Config = {
 	],
 };
 
-export default withMT(tailwindConfig);
+export default tailwindConfig;

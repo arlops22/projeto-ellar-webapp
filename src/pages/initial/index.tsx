@@ -2,7 +2,7 @@ import React from 'react';
 
 const InitialPage = () => {
 	return (
-		<div>InitialPage</div>
+		<div className='pt-5'>InitialPage</div>
 	);
 };
 
