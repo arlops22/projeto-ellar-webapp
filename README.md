@@ -1,10 +1,8 @@
 # Projeto Ellar Webapp
 
-Comandos disponiveis no projeto:
-
 ### `npm install`
 
-Instala dependências necessárias para executar o projeto.
+Install project dependencies.
 
 ### `npm run dev`
 
