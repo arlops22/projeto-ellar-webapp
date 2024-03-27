@@ -1,5 +1,7 @@
 import tailwindScrollbar from 'tailwind-scrollbar';
 
+import withMT from '@material-tailwind/react/utils/withMT';
+
 import * as Tokens from './src/utils/tokens';
 
 /** @type {import('tailwindcss').Config} */
@@ -49,4 +51,4 @@ const tailwindConfig = {
 	],
 };
 
-export default tailwindConfig;
+export default withMT(tailwindConfig);
